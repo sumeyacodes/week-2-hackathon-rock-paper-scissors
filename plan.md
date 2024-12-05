@@ -60,15 +60,13 @@ Running in browser - set up HTML and Script File
 
 1. Initialisation / Intro screen
 // Initialise an array ["Rock", "Paper", "Scissors",]
-// Declare an empty variable to store the user input
+// Declare an empty variable to store the user input userInput
+// Declare an empty variable to store the computers input computerInput
 
-// log an introductory message to the console. "Welcome to our game, please type either Rock, Paper or Scissors to begin!"
+// log an introductory message to the console. console.log("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
 
-
-2. Prompt for user input appears on screen
-// request a user input to the console (user input function?)
-
-
+2. Prompt for user input appears in the console
+ 
 
 3. User types selection
 // user inputs is received. This must be either "Rock" "Paper" or "Scissors"
@@ -87,7 +85,6 @@ Running in browser - set up HTML and Script File
 
 5. We compare the user choice to computer choice 
 // objectWins = {[rock, scissors], [paper, rock,], [,]}
-
 //  [userInput, computerInput]
 
 //We generate three arrays, one with Winning scenarios,
@@ -111,7 +108,34 @@ else return  'Computer Wins'
 
 
 
+PSEUDOCODE II
 
+array rockPaperScissorsArr = ["Rock", "Paper", "Scissors",]
+// Declare an empty variable to store the user input userInput
+// Declare an empty variable to store the computers input computerInput
+
+// request a user input to the console:
+    prompt()
+    let userInput = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
+
+
+Functions for Later:
+
+
+//Function to: get computer input(userinPut)
+    //Get random index for computer to select a choice from the array
+        // math.random method   let X = nMin + Math.floor(Math.random() * ((nMax + 1) - nMin))
+        // Computer randomises an index 0,1,2
+        // Declare a variable randomIndex
+        // Accesses the array rockPaperScissorsArr using randomIndex
+        // returns a choice of Rock, Paper or Scissors
+        // store this in variable computerInput
+    
+    // Find a way to compare the two inputs to the winning / drawing combinations
+
+        
+        
+        // log the computers choice to the console      
 
 
 
