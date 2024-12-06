@@ -8,15 +8,17 @@
     
 // WINDOW PROMPT TO GET USER INPUT  //
     
-    let userChoice = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
 
-    if(rockPaperScissorsArr.includes(userChoice)){
-        console.log("You have chosen: " + userChoice)
+console.log("Welcome to our game, please type either Rock, Paper or Scissors to begin!")
 
-    } else {
-        // console.log("Error: Please choose ei")
-        
-    }
+let userChoice = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
+
+while (rockPaperScissorsArr.includes(userChoice) === false) {
+    userChoice = window.prompt("Invalid Input - Please select either Rock, Paper or Scissors (case sensitive)",);
+   }
+
+console.log(userChoice)
+
 
 
     
@@ -39,7 +41,7 @@
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Rock" && userChoice === "Scissors") {
-            score--;
+            losses++;
             console.log("USER LOSES");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
@@ -48,7 +50,7 @@
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Paper" && userChoice === "Rock") {
-            score--;
+            losses++;
             console.log("USER LOSES");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
@@ -58,7 +60,7 @@
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Scissors" && userChoice === "Paper") {
-            score--;
+            losses++;
             console.log("USER LOSES");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 

@@ -126,13 +126,7 @@
                 userInput = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
 
 
-        if(rockPaperScissorsArr.includes(userChoice)){
-            console.log("You have chosen: " + userChoice)
-
-        } else {
-            // console.log("Error: Please choose ei")
-            
-        }
+Refine error messages
 
 
     // testing if we have a valid input that is in the array
