@@ -210,11 +210,16 @@ Refine error messages
 
             // Return score ??
 
-
+Use a for loop for the function to run 3 times
 
                 
             // log the computers choice to the console      
 
 
-
+Assign score variables - wins losses and draw - done
+Get the valid user input to match items in arrays - done
+Make whole game into function
+Show a new prompt for next turn for new user choice to make the game continuous 
+Limit to 3 rounds and then game over
+Refactor code to make the code cleaner
 
