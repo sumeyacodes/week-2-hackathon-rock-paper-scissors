@@ -218,8 +218,8 @@ Use a for loop for the function to run 3 times
 
 Assign score variables - wins losses and draw - done
 Get the valid user input to match items in arrays - done
-Make whole game into function
-Show a new prompt for next turn for new user choice to make the game continuous 
-Limit to 3 rounds and then game over
+Make whole game into function - done
+Show a new prompt for next turn for new user choice to make the game continuous - done
+Limit to 3 rounds and then game over - done
 Refactor code to make the code cleaner
 
