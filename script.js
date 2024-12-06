@@ -1,10 +1,4 @@
-// INITIALISE VARIABLES //
-
-
-
-
-// DECLARE FUNCTION WITH PARAMETER - userinPut 
-
+// INITIALISE VARIABLES
 let rockPaperScissorsArr = ["Rock", "Paper", "Scissors"];
 let computerChoice = "";
 let wins = 0;
@@ -12,87 +6,82 @@ let losses = 0;
 let draw = 0;
 let round = 1;
 
+// DISPLAY WELCOME MESSAGE IN CONSOLE
 console.log("Welcome to our game, please type either Rock, Paper or Scissors to begin!")
 
-function rockPaperScissorsGame() {
-    // Get random index for computer to select a choice from the array
-    
 
-        
-    // WINDOW PROMPT TO GET USER INPUT  //
-        
+// DECLARE FUNCTION FOR GAME
+function rockPaperScissorsGame() {
     
-   
-    
-    let userChoice = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
+    // Prompt window for user input
+    let userChoice = window.prompt("Please type either Rock, Paper or Scissors to begin!");
+    //Display rounds 
     console.log(`Round: ${round}`)
     
-    // test for validity of user input
-    
+    // Validate user input to only select from array
     while (rockPaperScissorsArr.includes(userChoice) === false) {
-        userChoice = window.prompt("Invalid Input - Please select either Rock, Paper or Scissors (case sensitive)",);
+        userChoice = window.prompt("ERROR: Please select either Rock, Paper or Scissors (case sensitive)");
        }
     
-    console.log(userChoice)
+
+    console.log("Your choice: " + userChoice)
     
-    // get randon index
+    // Random index for computer choice
     let randomIndex = Math.floor(Math.random() * 3);
             computerChoice = rockPaperScissorsArr[randomIndex];
             console.log ("Computer chooses: " + computerChoice);
     
     
-    // Check combinations to determine if the user wins, loses, or draws based on user and computer choices
+    // Check combinations to determine winner / loser
         if (computerChoice === "Rock" && userChoice === "Paper") {
+            console.log("YOU'VE WON THIS ROUND");
             wins++;
-            console.log("USER WINS");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
-            // return userChoice;
         } else if (computerChoice === "Rock" && userChoice === "Rock") {
-            console.log("DRAW");
+            console.log("IT'S A DRAW!");
             draw++;
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Rock" && userChoice === "Scissors") {
             losses++;
-            console.log("USER LOSES");
+            console.log("YOU'VE LOST THIS ROUND");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Paper" && userChoice === "Paper") {
-            console.log("DRAW");
+            console.log("IT'S A DRAW!");
             draw++;
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Paper" && userChoice === "Rock") {
             losses++;
-            console.log("USER LOSES");
+            console.log("YOU'VE LOST THIS ROUND");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Paper" && userChoice === "Scissors") {
             wins++;
-            console.log("USER WINS");
+            console.log("YOU'VE WON THIS ROUND");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Scissors" && userChoice === "Paper") {
             losses++;
-            console.log("USER LOSES");
+            console.log("YOU'VE LOST THIS ROUND");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Scissors" && userChoice === "Rock") {
             wins++;
-            console.log("USER WINS");
+            console.log("YOU'VE WON THIS ROUND");
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
 
         } else if (computerChoice === "Scissors" && userChoice === "Scissors") {
-            console.log("DRAW");
+            console.log("IT'S A DRAW!");
             draw++;
             console.log(`Score is Wins: ${wins} Losses: ${losses} Draws: ${draw}`);
         } 
-        
     }
 
 
     
-// For loop to run the game 3 times
+// Run 3 rounds 
 for (i=0;i<3;i++) {
         rockPaperScissorsGame();
         round++;
@@ -105,7 +94,7 @@ console.log(`Final score: Wins: ${wins} Losses: ${losses} Draws: ${draw}`)
 if (wins > losses || wins > draw) {
     console.log("Congratulations! You won!")
 } else if (wins === losses) {
-    console.log("It's a draw!")
+    console.log("It's a draw!!")
 } else {
     console.log("You lose!")
 }

@@ -125,19 +125,15 @@
                 prompt()
                 userInput = window.prompt("Welcome to our game, please type either Rock, Paper or Scissors to begin!");
 
+        // testing if we have a valid input that is in the array
+            if rockPaperScissorsArr includes the user choice
+            return a console log with "You have chosen: " + userChoice & the rest of the code runs
 
-Refine error messages
-
-
-    // testing if we have a valid input that is in the array
-        if rockPaperScissorsArr includes the user choice
-        return a console log with "You have chosen: " + userChoice & the rest of the code runs
-
-
-        while array includes userInput === false 
-            log error to console
-        else 
-            break
+        // validate user input
+            while array includes userInput === false 
+                log error to console
+            else 
+                break
 
 
         Functions for Later:
@@ -156,70 +152,46 @@ Refine error messages
             // Find a way to compare the two inputs to the winning / drawing combinations
 
                 if statement ( computerInput ===  "Rock" && userInput === "Paper ) {
-
                     score++
                     log to console - "USER WINS"
                     log to console "Score is { score }
                 }
                 else if ( computerInput === "Rock" && userInput === "Rock" ) {
-
                     log to console "DRAW"
                     log to console "Score is { score }
-
                 }
                 else if ( computerInput ===  "Rock" && userInput === "Scissors"   ) {
-
                     score--
                     log to console "USER LOSES"
                     log to console "Score is { score }
-
-
                 } else if ( computerInput ===  "Paper" && userInput === Paper  ) {
-                    
-                    
                     log to console "DRAW"
                     log to console "Score is { score }
-
-
                 } else if ( computerInput ===  "Paper" && userInput ===  Rock   ) {
-
                     score--
                     log to console "USER LOSES"
                     log to console "Score is { score }
-
                 } else if ( computerInput ===  "Paper" && userInput === Scissors  ) {
-
                     score++
                     log to console - "USER WINS"
-                
                 }  else if ( computerInput ===  Scissors && userInput === Paper  ) {
-                    
                     score--
                     log to console "USER LOSES"
-
                 } else if (  computerInput ===  Scissors && userInput === Rock  ) {
-
                     score++
                     log to console - "USER WINS"
-
                 } else if (  computerInput ===  Scissors && userInput === Scissors  ) {
-
                     log to console "DRAW"
-
                 }
 
-            // Return score ??
-
-Use a for loop for the function to run 3 times
-
-                
-            // log the computers choice to the console      
+Use a for loop for the function to run 3 times for 3 rounds
 
 
-Assign score variables - wins losses and draw - done
-Get the valid user input to match items in arrays - done
-Make whole game into function - done
-Show a new prompt for next turn for new user choice to make the game continuous - done
-Limit to 3 rounds and then game over - done
-Refactor code to make the code cleaner
+TO DO LIST 
+    - Assign score variables - wins losses and draw - DONE
+    - Get the valid user input to match items in arrays - DONE
+    - Make whole game into function - DONE
+    - Show a new prompt for next turn for new user choice to make the game continuous - DONE
+    - Limit to 3 rounds and then game over - DONE
+    - Refactor code to make the code cleaner -- NO TIME 
 
