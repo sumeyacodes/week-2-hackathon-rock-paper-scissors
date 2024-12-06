@@ -139,6 +139,7 @@
         if rockPaperScissorsArr includes the user choice
         return a console log with "You have chosen: " + userChoice & the rest of the code runs
 
+
         while array includes userInput === false 
             log error to console
         else 
